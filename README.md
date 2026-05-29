@@ -1,16 +1,103 @@
-# React + Vite
+# 🎬 Movies App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple movie browsing application built with **React** and **Vite** that uses the **TMDB API** to fetch and display movie data. Users can search for movies, explore popular titles, and save their favorite movies for quick access.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- 🔍 Search for movies
+- 🎥 Browse popular movies
+- ⭐ Add movies to favourites
+- ❌ Remove movies from favourites
+- 📅 View movie release dates
+- 🖼️ Display movie posters
+- ⚡ Fast and responsive React interface
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React
+- Vite
+- JavaScript
+- CSS
+- TMDB API
 
-## Expanding the ESLint configuration
+## Installation
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+1. Clone the repository:
+
+```bash
+git clone https://github.com/your-username/movies-app.git
+cd movies-app
+```
+
+2. Install dependencies:
+
+```bash
+npm install
+```
+
+3. Create a `.env` file in the project root and add your TMDB API key:
+
+```env
+VITE_TMDB_API_KEY=your_api_key_here
+```
+
+4. Start the development server:
+
+```bash
+npm run dev
+```
+
+The application will be available at:
+
+```text
+http://localhost:5173
+```
+
+## Available Scripts
+
+```bash
+npm run dev      # Start development server
+npm run build    # Build for production
+npm run preview  # Preview production build
+```
+
+## Project Structure
+
+```text
+src/
+├── components/
+│   ├── MovieCard.jsx
+│   └── NavBar.jsx
+├── pages/
+│   ├── Home.jsx
+│   └── Favourites.jsx
+├── services/
+│   └── api.js
+├── App.jsx
+├── main.jsx
+└── App.css
+```
+
+## API
+
+Movie data is provided by The Movie Database (TMDB) API.
+
+- Search movies
+- Fetch popular movies
+- Retrieve movie details such as posters, ratings, and release dates
+
+## Favourites
+
+The application allows users to maintain a personal favourites list by adding and removing movies directly from the interface.
+
+## Future Improvements
+
+- Movie details page
+- Genre filtering
+- Infinite scrolling
+- Pagination
+- User authentication
+
+## License
+
+This project is intended for learning and educational purposes.
